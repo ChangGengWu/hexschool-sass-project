@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap");
+
+$font-family: "Noto Sans TC", sans-serif;
+
+$logo-1: "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png";
+
+$brown: #916019;
+$gray: #8d8d8d;
+$white: #e0e0e0;
+
+//font-size
+$font-base: 16px;
+$fs-1: $font-base * 1.125; //18
+$fs-2: $font-base * 1.25; //20
+$fs-3: $font-base * 1.5; //24
+$fs-4: $font-base * 1.75; //28
+$fs-5: $font-base * 2; //32
+$fs-6: $font-base * 2.5; //40
+
+$container-width: 1140px;
