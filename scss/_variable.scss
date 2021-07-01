@@ -6,7 +6,8 @@ $logo-1: "https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/maste
 
 $brown: #916019;
 $gray: #8d8d8d;
-$white: #e0e0e0;
+$gray-white: #e0e0e0;
+$white: #ffffff;
 
 //font-size
 $font-base: 16px;
@@ -16,5 +17,14 @@ $fs-3: $font-base * 1.5; //24
 $fs-4: $font-base * 1.75; //28
 $fs-5: $font-base * 2; //32
 $fs-6: $font-base * 2.5; //40
+
+//line-height
+$lh-base: 24px;
+$lh-1: $lh-base * 1.125; //27
+$lh-2: $lh-base * 1.25; //30
+$lh-3: $lh-base * 1.5; //36
+$lh-4: $lh-base * 1.75; //42
+$lh-5: $lh-base * 2; //48
+$lh-6: $lh-base * 2.5; //60
 
 $container-width: 1140px;

@@ -188,4 +188,89 @@ img {
   height: 38px;
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png");
 }
+
+.cover {
+  height: 870px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cover-info {
+  max-width: 445px;
+  margin-right: 405px;
+}
+
+.cover-info h2 {
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 60px;
+}
+
+.cover-info p {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 36px;
+}
+
+.btn-shop {
+  width: 350px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.product-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-list img {
+  width: 555px;
+  height: 555px;
+}
+
+.product-list .detail {
+  width: 555px;
+  height: 555px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 110px;
+}
+
+.product-list .detail h3 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.product-list .detail p {
+  font-size: 20px;
+  line-height: 30px;
+}
 /*# sourceMappingURL=all.css.map */

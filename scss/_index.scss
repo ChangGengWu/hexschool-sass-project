@@ -15,3 +15,72 @@
   height: 38px;
   background: url($logo-1);
 }
+
+.cover {
+  height: 870px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cover-info {
+  max-width: 445px;
+  margin-right: 405px;
+
+  h2 {
+    font-size: $fs-6;
+    color: $white;
+    line-height: $lh-6;
+  }
+
+  p {
+    font-size: $fs-3;
+    color: $white;
+    line-height: $lh-3;
+  }
+}
+
+.btn-shop {
+  width: 350px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: $white;
+  font-size: $fs-3;
+  line-height: $lh-4;
+}
+
+.product-list {
+  li {
+    display: flex;
+  }
+  img {
+    width: 555px;
+    height: 555px;
+  }
+
+  .detail {
+    width: 555px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 110px;
+
+    h3 {
+      font-size: $fs-5;
+      line-height: $lh-5;
+    }
+
+    p {
+      font-size: $fs-2;
+      line-height: $lh-2;
+    }
+  }
+}
