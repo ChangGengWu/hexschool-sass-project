@@ -146,6 +146,11 @@ img {
           box-sizing: border-box;
 }
 
+.btn {
+  width: 350px;
+  height: 60px;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,6 +175,22 @@ img {
           align-items: center;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-52 {
+  margin-bottom: 52px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -181,12 +202,15 @@ img {
 
 .menu li {
   padding: 16px;
+  font-size: 20px;
+  color: #8d8d8d;
 }
 
 .logo-1 {
   width: 128px;
   height: 38px;
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png");
+  background-position: center center;
 }
 
 .cover {
@@ -234,15 +258,23 @@ img {
   line-height: 42px;
 }
 
+.p-img {
+  width: 555px;
+  height: 555px;
+}
+
+.p-img.l-size {
+  height: 1080px;
+}
+
+.product-list {
+  padding: 60px 0;
+}
+
 .product-list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.product-list img {
-  width: 555px;
-  height: 555px;
 }
 
 .product-list .detail {
@@ -258,10 +290,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 110px;
+}
+
+.product-list .detail.size-lg {
+  height: 1080px;
 }
 
 .product-list .detail h3 {
@@ -272,5 +308,269 @@ img {
 .product-list .detail p {
   font-size: 20px;
   line-height: 30px;
+}
+
+.product-list .detail a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ac8a46;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.effect-info {
+  width: 555px;
+  padding: 110px;
+}
+
+.effect-info li {
+  display: block;
+}
+
+.effect-info li h4 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.effect-info li p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.plan-btn {
+  border: 2px solid #000000;
+  border-radius: 30px;
+  background-color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.product-market {
+  height: 728px;
+  background-color: #e0e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-market ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product-market li {
+  margin-bottom: 8px;
+}
+
+.product-market li.soldout {
+  position: relative;
+}
+
+.product-market li .shadow {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 350px;
+  height: 540px;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.product-market img {
+  width: 350px;
+  height: 540px;
+}
+
+.product-market h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.product-market .producer {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product-market .price {
+  display: inline;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product-market .discount {
+  text-decoration: line-through;
+  color: #8d8d8d;
+}
+
+.recycle {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px 0;
+}
+
+.recycle .recycle-img {
+  display: block;
+  width: 730px;
+  height: 520px;
+}
+
+.recycle .recycle-detail {
+  max-height: 520px;
+  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.recycle .recycle-detail h3 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.recycle .recycle-detail p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.recycle .recycle-detail a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ac8a46;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.recycle .recycle-detail span {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.subscribe {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe .content {
+  padding-top: 312px;
+}
+
+.subscribe h3 {
+  font-size: 32px;
+  color: #8d8d8d;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.subscribe input {
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid #916000;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 16px;
+}
+
+.subscribe button {
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid #916000;
+  padding: 21px 26px;
+  background: #916000;
+  color: #ffffff;
+}
+
+.footer {
+  background: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .f-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer span {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.footer .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer li {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=all.css.map */
