@@ -3,6 +3,11 @@
   height: 60px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex {
   display: flex;
 }
@@ -32,4 +37,7 @@
 }
 .mb-60 {
   margin-bottom: 60px;
+}
+.mb-80 {
+  margin-bottom: 80px;
 }

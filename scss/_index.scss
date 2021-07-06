@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu {
   font-size: $fs-2;
   li {

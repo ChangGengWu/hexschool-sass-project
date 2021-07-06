@@ -151,6 +151,11 @@ img {
   height: 60px;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,9 +196,25 @@ img {
   margin-bottom: 60px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
@@ -572,5 +593,109 @@ img {
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+}
+
+.brand-list-bg {
+  height: 52px;
+  background-color: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #916000;
+}
+
+.brand-list li {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 28px;
+}
+
+.all-product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.all-product-list li {
+  margin-bottom: 58px;
+}
+
+.all-product-list li img {
+  width: 255px;
+  height: 255px;
+}
+
+.all-product-list li h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+.all-product-list li .producer {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.all-product-list li .price {
+  display: inline;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.all-product-list li .discount {
+  text-decoration: line-through;
+  color: #8d8d8d;
+}
+
+.all-product-list li .icon {
+  color: #916019;
+  margin-right: 11px;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 78px;
+  margin-bottom: 60px;
+}
+
+.pagination li {
+  margin-right: 20px;
+  color: #000000;
+}
+
+.pagination li a:hover {
+  text-decoration: underline;
+  color: #ac8a46;
 }
 /*# sourceMappingURL=all.css.map */

@@ -1,0 +1,79 @@
+.brand-list-bg {
+  height: 52px;
+  background-color: #916000;
+  display: flex;
+  align-items: center;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #916000;
+
+  li {
+    color: $white;
+    font-size: $fs-2;
+    line-height: $lh-2;
+    margin-right: 28px;
+  }
+}
+
+.all-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    margin-bottom: 58px;
+    img {
+      width: 255px;
+      height: 255px;
+    }
+
+    h3 {
+      font-size: $fs-3;
+      line-height: $lh-3;
+      font-weight: 600;
+    }
+
+    .producer {
+      font-size: $font-base;
+      line-height: $lh-base;
+    }
+
+    .price {
+      display: inline;
+      font-size: $font-base;
+      line-height: $lh-base;
+    }
+    .discount {
+      text-decoration: line-through;
+      color: #8d8d8d;
+    }
+    .icon {
+      color: #916019;
+      margin-right: 11px;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $fs-2;
+  line-height: $lh-2;
+  margin-top: 78px;
+  margin-bottom: 60px;
+
+  li {
+    margin-right: 20px;
+    color: #000000;
+
+    a:hover {
+      text-decoration: underline;
+      color: #ac8a46;
+    }
+  }
+}
