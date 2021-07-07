@@ -1,0 +1,90 @@
+.single-product-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-photos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 730px;
+  img {
+    width: 730px;
+    height: 460px;
+  }
+}
+
+.product-photo-group {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 350px;
+    height: 640px;
+  }
+}
+
+.product-content {
+  width: 350px;
+
+  h3 {
+    font-size: $fs-5;
+    line-height: $lh-5;
+    font-weight: bold;
+  }
+  .product-intro {
+    font-size: $fs-2;
+    line-height: $lh-2;
+    margin-bottom: 32px;
+  }
+  .price {
+    display: block;
+    font-size: $fs-2;
+    line-height: $lh-2;
+    margin-bottom: 12px;
+  }
+  input {
+    max-width: 160px;
+    height: 50px;
+    font-size: $font-base;
+    line-height: $lh-base;
+    border: 1px solid #916000;
+    padding: 16px;
+    border-radius: 4px 0px 0px 4px;
+  }
+  button {
+    max-width: 190px;
+    height: 50px;
+    font-size: $font-base;
+    line-height: 18px;
+    border: 2px solid #916000;
+    padding: 14px 53px;
+    background: #916000;
+    color: $white;
+    border-radius: 0px 4px 4px 0px;
+  }
+
+  .like {
+    font-size: $font-base;
+    line-height: $lh-base;
+    margin-top: 8px;
+    display: block;
+    i {
+      color: #916019;
+      margin-right: 2px;
+    }
+  }
+
+  h4 {
+    font-size: $font-base;
+    line-height: $lh-base;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .guide {
+    font-size: $font-base;
+    line-height: $lh-base;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
