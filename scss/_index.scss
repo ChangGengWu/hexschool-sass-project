@@ -1,30 +1,3 @@
-.container {
-  max-width: $container-width;
-  margin: 0 auto;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  font-size: $fs-2;
-  li {
-    padding: 16px;
-    font-size: $fs-2;
-    color: #8d8d8d;
-  }
-}
-
-.logo-1 {
-  width: 128px;
-  height: 38px;
-  background: url($logo-1);
-  background-position: center center;
-}
-
 .cover {
   height: 870px;
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
@@ -275,37 +248,6 @@
     border: 2px solid #916000;
     padding: 21px 26px;
     background: #916000;
-    color: $white;
-  }
-}
-
-.footer {
-  background: #916000;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-  .f-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  span {
-    font-size: 14px;
-    color: $white;
-    font-weight: normal;
-    margin-left: 20px;
-  }
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  li {
-    font-size: $fs-2;
-    line-height: $lh-2;
     color: $white;
   }
 }

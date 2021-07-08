@@ -151,6 +151,11 @@ img {
   height: 60px;
 }
 
+.btn.btn-sm {
+  width: 65px;
+  height: 38px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -178,99 +183,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.brand-list-bg {
-  height: 52px;
-  background-color: #916000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.brand-list {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #916000;
-}
-
-.brand-list li {
-  color: #ffffff;
-  font-size: 20px;
-  line-height: 30px;
-  margin-right: 28px;
-}
-
-.footer {
-  width: 100%;
-  background: #916000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer .footer-content {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer .f-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer span {
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: normal;
-  margin-left: 20px;
-}
-
-.footer .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer li {
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
 }
 
 .mb-16 {
@@ -314,11 +226,11 @@ a {
           align-items: center;
 }
 
-.menu {
+.nav .menu {
   font-size: 20px;
 }
 
-.menu li {
+.nav .menu li {
   padding: 16px;
   font-size: 20px;
   color: #8d8d8d;
@@ -329,6 +241,101 @@ a {
   height: 38px;
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/d%E2%80%99Perfume.png");
   background-position: center center;
+}
+
+.brand-list-bg {
+  height: 52px;
+  background-color: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brand-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #916000;
+}
+
+.brand-list li {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 28px;
+}
+
+.footer {
+  width: 100%;
+  background: #916000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.footer .footer-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .f-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer span {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  margin-left: 20px;
+}
+
+.footer .menu {
+  width: 263px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer li {
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .cover {
@@ -642,56 +649,6 @@ a {
   color: #ffffff;
 }
 
-.footer {
-  background: #916000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer .f-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer span {
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: normal;
-  margin-left: 20px;
-}
-
-.footer .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer li {
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
 .all-product-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -875,5 +832,88 @@ a {
   line-height: 24px;
   font-weight: 300;
   margin-bottom: 20px;
+}
+
+.login-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 82px;
+}
+
+.login-main .login-cover {
+  width: 730px;
+  height: 730px;
+}
+
+.login-main .login {
+  width: 350px;
+}
+
+.login-main .login h3 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.login-main .login label {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  color: #212529;
+  margin-bottom: 4px;
+}
+
+.login-main .login input {
+  width: 350px;
+  height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.login-main .login .login-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-main .login .login-btns a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #916000;
+  font-weight: 600;
+}
+
+.login-main .login .login-btns .signup-btn {
+  border: 1px solid #916000;
+  background: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  color: #916000;
+  border-radius: 4px;
+}
+
+.login-main .login .login-btns .login-btn {
+  background: #916000;
+  border: 1px solid #916000;
+  color: #ffffff;
+  border-radius: 4px;
 }
 /*# sourceMappingURL=all.css.map */
