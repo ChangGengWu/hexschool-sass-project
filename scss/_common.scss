@@ -1,11 +1,29 @@
 .btn {
+  text-align: center;
+  vertical-align: middle;
   width: 350px;
   height: 60px;
+  border-radius: 4px;
+  font-size: $font-base;
+  line-height: 22px;
 
   &.btn-sm {
     width: 65px;
     height: 38px;
   }
+  &.btn-md {
+    width: 160px;
+    height: 38px;
+  }
+}
+.btn-brown {
+  border: 2px solid #916000;
+  background: #916000;
+  color: #ffffff;
+}
+
+.block {
+  display: block;
 }
 
 a {
@@ -29,17 +47,52 @@ a {
   align-items: center;
 }
 
-.mb-16 {
-  margin-bottom: 16px;
+//form
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: baseline;
 }
 
+.form-control {
+  width: 350px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: $font-base;
+  line-height: 19px;
+  padding: 10px 10px;
+
+  &.form-sm {
+    width: 59px;
+    padding: 16px 8px;
+  }
+  &.form-md {
+    width: 160px;
+    padding: 8px 8px;
+  }
+}
+
+input[type="checkbox"] {
+  border-radius: 3px;
+  background: #916000;
+}
+
+//margin bottom
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
 .mb-30 {
   margin-bottom: 30px;
 }
-
 .mb-52 {
   margin-bottom: 52px;
 }

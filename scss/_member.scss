@@ -1,7 +1,6 @@
 .member-main {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
 }
 
 .member-menu {
@@ -30,6 +29,7 @@
 }
 
 .profile-setting {
+  margin-left: 93px;
   width: 635px;
   h3 {
     width: 100%;
@@ -41,23 +41,17 @@
     border-bottom: 1px solid #818a91;
   }
   label {
+    min-width: 64px;
     font-size: $font-base;
     line-height: 22px;
     color: #818a91;
     margin-right: 31px;
   }
-  .form-group {
-    margin-bottom: 20px;
-  }
-  .form-control {
-    width: 350px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: $font-base;
-    line-height: 19px;
-    padding-left: 10px;
-    padding-top: 9px;
-    padding-bottom: 10px;
+}
+
+.form-group {
+  .btn {
+    margin-left: 95px;
   }
 }
 

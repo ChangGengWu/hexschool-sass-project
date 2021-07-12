@@ -147,13 +147,33 @@ img {
 }
 
 .btn {
+  text-align: center;
+  vertical-align: middle;
   width: 350px;
   height: 60px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .btn.btn-sm {
   width: 65px;
   height: 38px;
+}
+
+.btn.btn-md {
+  width: 160px;
+  height: 38px;
+}
+
+.btn-brown {
+  border: 2px solid #916000;
+  background: #916000;
+  color: #ffffff;
+}
+
+.block {
+  display: block;
 }
 
 a {
@@ -185,8 +205,50 @@ a {
           align-items: center;
 }
 
+.form-group {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.form-control {
+  width: 350px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 10px 10px;
+}
+
+.form-control.form-sm {
+  width: 59px;
+  padding: 16px 8px;
+}
+
+.form-control.form-md {
+  width: 160px;
+  padding: 8px 8px;
+}
+
+input[type="checkbox"] {
+  border-radius: 3px;
+  background: #916000;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 .mb-16 {
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 
 .mb-20 {
@@ -924,9 +986,6 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .member-menu h2 {
@@ -954,6 +1013,7 @@ a {
 }
 
 .profile-setting {
+  margin-left: 93px;
   width: 635px;
 }
 
@@ -968,25 +1028,15 @@ a {
 }
 
 .profile-setting label {
+  min-width: 64px;
   font-size: 16px;
   line-height: 22px;
   color: #818a91;
   margin-right: 31px;
 }
 
-.profile-setting .form-group {
-  margin-bottom: 20px;
-}
-
-.profile-setting .form-control {
-  width: 350px;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 19px;
-  padding-left: 10px;
-  padding-top: 9px;
-  padding-bottom: 10px;
+.form-group .btn {
+  margin-left: 95px;
 }
 
 .member-record {
