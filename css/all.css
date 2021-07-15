@@ -176,6 +176,14 @@ img {
   display: block;
 }
 
+.photo-show {
+  display: block;
+}
+
+.photo-hide {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -298,6 +306,23 @@ input[type="checkbox"] {
   color: #8d8d8d;
 }
 
+@media (max-width: 768px) {
+  .nav .menu {
+    display: none;
+  }
+  .nav .hamburger {
+    display: block;
+  }
+}
+
+.hamburger {
+  width: 72px;
+  height: 56px;
+  background: transparent;
+  border: none;
+  display: none;
+}
+
 .logo-1 {
   width: 128px;
   height: 38px;
@@ -314,6 +339,12 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 768px) {
+  .brand-list-bg {
+    display: none;
+  }
 }
 
 .brand-list {
@@ -335,6 +366,55 @@ input[type="checkbox"] {
   font-size: 20px;
   line-height: 30px;
   margin-right: 28px;
+}
+
+@media (max-width: 768px) {
+  .brand-list {
+    display: none;
+  }
+}
+
+.subscribe {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe .content {
+  padding-top: 312px;
+}
+
+.subscribe h3 {
+  font-size: 32px;
+  color: #8d8d8d;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.subscribe input {
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid #916000;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 16px;
+}
+
+.subscribe button {
+  font-size: 16px;
+  line-height: 24px;
+  border: 2px solid #916000;
+  padding: 21px 26px;
+  background: #916000;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .subscribe .container {
+    margin: 0 20%;
+  }
 }
 
 .footer {
@@ -400,6 +480,24 @@ input[type="checkbox"] {
   color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .footer .footer-content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .menu {
+    display: none;
+  }
+}
+
 .cover {
   height: 870px;
   background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/perfume-week6/index1.jpg");
@@ -434,6 +532,12 @@ input[type="checkbox"] {
   line-height: 36px;
 }
 
+@media (max-width: 768px) {
+  .cover-info {
+    margin: 0 auto;
+  }
+}
+
 .btn-shop {
   width: 350px;
   height: 60px;
@@ -454,6 +558,16 @@ input[type="checkbox"] {
   height: 1080px;
 }
 
+@media (max-width: 768px) {
+  .p-img {
+    width: 345px;
+    height: 350px;
+  }
+  .p-img.l-size {
+    height: 680px;
+  }
+}
+
 .product-list {
   padding: 60px 0;
 }
@@ -462,6 +576,16 @@ input[type="checkbox"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product-list li.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .product-list .detail {
@@ -503,6 +627,32 @@ input[type="checkbox"] {
   color: #ac8a46;
   text-decoration: none;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .product-list li {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 32px;
+  }
+  .product-list .detail {
+    width: 100%;
+    height: 230px;
+  }
+  .product-list .reverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
 }
 
 .effect-info {
@@ -616,6 +766,24 @@ input[type="checkbox"] {
   color: #8d8d8d;
 }
 
+@media (max-width: 768px) {
+  .product-market {
+    height: auto;
+  }
+  .product-market ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .recycle {
   background-color: #ffffff;
   display: -webkit-box;
@@ -674,41 +842,16 @@ input[type="checkbox"] {
   line-height: 30px;
 }
 
-.subscribe {
-  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
-  height: 600px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.subscribe .content {
-  padding-top: 312px;
-}
-
-.subscribe h3 {
-  font-size: 32px;
-  color: #8d8d8d;
-  line-height: 48px;
-  font-weight: 600;
-}
-
-.subscribe input {
-  font-size: 16px;
-  line-height: 24px;
-  border: 2px solid #916000;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 16px;
-}
-
-.subscribe button {
-  font-size: 16px;
-  line-height: 24px;
-  border: 2px solid #916000;
-  padding: 21px 26px;
-  background: #916000;
-  color: #ffffff;
+@media (max-width: 768px) {
+  .recycle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recycle .recycle-detail {
+    margin-top: 8px;
+  }
 }
 
 .all-product-list {
@@ -758,6 +901,15 @@ input[type="checkbox"] {
   margin-right: 11px;
 }
 
+@media (max-width: 768px) {
+  .all-product-list {
+    margin-top: 50px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -793,6 +945,27 @@ input[type="checkbox"] {
           justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .single-product-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .single-product-main .photo-show {
+    display: none !important;
+  }
+  .single-product-main .photo-hide {
+    display: block !important;
+  }
+}
+
 .product-photos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -801,6 +974,12 @@ input[type="checkbox"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 730px;
@@ -811,6 +990,14 @@ input[type="checkbox"] {
   height: 460px;
 }
 
+@media (max-width: 768px) {
+  .product-photos img {
+    width: 345px;
+    height: 460px;
+    margin-bottom: 16px;
+  }
+}
+
 .product-photo-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -818,11 +1005,34 @@ input[type="checkbox"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .product-photo-group img {
   width: 350px;
   height: 640px;
+}
+
+@media (max-width: 768px) {
+  .product-photo-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .product-photo-group img {
+    width: 345px;
+    height: 460px;
+  }
+  .product-photo-group .photo-show {
+    display: none !important;
+  }
+  .product-photo-group .photo-hide {
+    display: block !important;
+  }
 }
 
 .product-content {
@@ -979,6 +1189,19 @@ input[type="checkbox"] {
   border-radius: 4px;
 }
 
+@media (max-width: 768px) {
+  .login-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login-main .login-cover {
+    width: 345px;
+    height: 220px;
+  }
+}
+
 .member-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,6 +1209,19 @@ input[type="checkbox"] {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .member-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 15px;
+  }
 }
 
 .member-menu h2 {
@@ -1012,6 +1248,29 @@ input[type="checkbox"] {
   border-bottom: 2px solid #916000;
 }
 
+@media (max-width: 768px) {
+  .member-menu {
+    width: 100%;
+  }
+  .member-menu h2 {
+    display: none;
+  }
+  .member-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .profile-setting {
   margin-left: 93px;
   width: 635px;
@@ -1035,8 +1294,18 @@ input[type="checkbox"] {
   margin-right: 31px;
 }
 
-.form-group .btn {
+.profile-setting .form-group .btn {
   margin-left: 95px;
+}
+
+@media (max-width: 768px) {
+  .profile-setting {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 0 auto;
+  }
 }
 
 .member-record {

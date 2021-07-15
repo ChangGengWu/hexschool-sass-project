@@ -17,6 +17,22 @@
       color: #8d8d8d;
     }
   }
+  @include mobile {
+    .menu {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+}
+
+.hamburger {
+  width: 72px;
+  height: 56px;
+  background: transparent;
+  border: none;
+  display: none;
 }
 .logo-1 {
   width: 128px;
@@ -31,6 +47,10 @@
   background-color: #916000;
   display: flex;
   align-items: center;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 .brand-list {
@@ -45,6 +65,49 @@
     font-size: $fs-2;
     line-height: $lh-2;
     margin-right: 28px;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+//sub
+.subscribe {
+  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .content {
+    padding-top: 312px;
+  }
+  h3 {
+    font-size: $fs-5;
+    color: #8d8d8d;
+    line-height: $lh-5;
+    font-weight: 600;
+  }
+  input {
+    font-size: $font-base;
+    line-height: $lh-base;
+    border: 2px solid #916000;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 16px;
+  }
+  button {
+    font-size: $font-base;
+    line-height: $lh-base;
+    border: 2px solid #916000;
+    padding: 21px 26px;
+    background: #916000;
+    color: $white;
+  }
+
+  @include mobile {
+    .container {
+      margin: 0 20%;
+    }
   }
 }
 
@@ -86,5 +149,17 @@
     font-size: $fs-2;
     line-height: $lh-2;
     color: $white;
+  }
+
+  @include mobile {
+    .footer-content {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu {
+      display: none;
+    }
   }
 }

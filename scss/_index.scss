@@ -24,6 +24,10 @@
     color: $white;
     line-height: $lh-3;
   }
+
+  @include mobile {
+    margin: 0 auto;
+  }
 }
 
 .btn-shop {
@@ -43,12 +47,25 @@
   &.l-size {
     height: 1080px;
   }
+
+  @include mobile {
+    width: 345px;
+    height: 350px;
+
+    &.l-size {
+      height: 680px;
+    }
+  }
 }
 
 .product-list {
   padding: 60px 0;
   li {
     display: flex;
+    justify-content: center;
+    &.reverse {
+      flex-direction: row-reverse;
+    }
   }
 
   .detail {
@@ -80,6 +97,22 @@
       color: #ac8a46;
       text-decoration: none;
       font-weight: 600;
+    }
+  }
+
+  @include mobile {
+    li {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 32px;
+    }
+    .detail {
+      width: 100%;
+      height: 230px;
+    }
+    .reverse {
+      flex-direction: column-reverse !important;
     }
   }
 }
@@ -171,6 +204,15 @@
     text-decoration: line-through;
     color: #8d8d8d;
   }
+
+  @include mobile {
+    height: auto;
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 .recycle {
@@ -217,37 +259,12 @@
       line-height: $lh-2;
     }
   }
-}
 
-.subscribe {
-  background: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index10.jpg?raw=true");
-  height: 600px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .content {
-    padding-top: 312px;
-  }
-  h3 {
-    font-size: $fs-5;
-    color: #8d8d8d;
-    line-height: $lh-5;
-    font-weight: 600;
-  }
-  input {
-    font-size: $font-base;
-    line-height: $lh-base;
-    border: 2px solid #916000;
-    padding-top: 21px;
-    padding-bottom: 21px;
-    padding-left: 16px;
-  }
-  button {
-    font-size: $font-base;
-    line-height: $lh-base;
-    border: 2px solid #916000;
-    padding: 21px 26px;
-    background: #916000;
-    color: $white;
+  @include mobile {
+    flex-direction: column;
+
+    .recycle-detail {
+      margin-top: 8px;
+    }
   }
 }

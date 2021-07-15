@@ -67,4 +67,13 @@
       }
     }
   }
+
+  @include mobile {
+    flex-direction: column;
+
+    .login-cover {
+      width: 345px;
+      height: 220px;
+    }
+  }
 }

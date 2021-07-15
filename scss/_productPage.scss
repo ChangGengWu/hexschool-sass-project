@@ -35,6 +35,11 @@
       margin-right: 11px;
     }
   }
+
+  @include mobile {
+    margin-top: 50px;
+    justify-content: space-evenly;
+  }
 }
 
 .pagination {

@@ -1,6 +1,11 @@
 .member-main {
   display: flex;
   align-items: flex-start;
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+  }
 }
 
 .member-menu {
@@ -26,6 +31,18 @@
       border-bottom: 2px solid #916000;
     }
   }
+  @include mobile {
+    width: 100%;
+    h2 {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
 }
 
 .profile-setting {
@@ -47,11 +64,16 @@
     color: #818a91;
     margin-right: 31px;
   }
-}
 
-.form-group {
-  .btn {
-    margin-left: 95px;
+  .form-group {
+    .btn {
+      margin-left: 95px;
+    }
+  }
+  @include mobile {
+    width: 100%;
+    order: 3;
+    margin: 0 auto;
   }
 }
 
