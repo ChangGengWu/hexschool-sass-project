@@ -6,27 +6,30 @@ const addCart = document.querySelector(".shopping-cart");
 const addLike = document.querySelectorAll(".like");
 const modalContent = document.querySelector(".modal-content");
 
+//下拉式選單
 menuBtn.addEventListener("click", function(e) {
-  console.log("menuBtn");
   mobileMenu.classList.toggle("hide");
 });
 
+//收藏按鈕
 addLike.forEach(addBtn => {
   addBtn.addEventListener("click", function(e) {
-    console.log("addLike");
     modalContent.textContent = "已加入我的收藏";
     modal.style.display = "block";
   });
 });
 
-addCart.addEventListener("click", function(e) {
-  console.log("addLike");
-  modalContent.textContent = "已加入購物車";
-  modal.style.display = "block";
-});
+//購物車按鈕
+try {
+  addCart.addEventListener("click", function(e) {
+    modalContent.textContent = "已加入購物車";
+    modal.style.display = "block";
+  });
+} catch {}
 
-window.onclick = function(event) {
+//關閉modal
+window.addEventListener("click", function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-};
+});
