@@ -11,15 +11,23 @@
 </head>
 <body>
     <div class="nav container">
-        <div class="logo-1 "></div>
+            <a href="index.html"><div class="logo-1 "></div></a>
         <ul class="menu flex">
-          <li><a href="productPage.html"><i class="fas fa-store-alt"></i>Product</a></li>
-          <li><i class="fas fa-user"><a href="login.html"></i>log in</a></li>
-          <li><i class="fas fa-heart"></i>Wishlist</li>
-          <li><i class="fas fa-shopping-cart"></i>Cart(3)</li>
+          <li class="show"><a href="productPage.html"><i class="fas fa-store-alt"></i>Product</a></li>
+          <li class="show"><i class="fas fa-user"><a href="login.html"></i>log in</a></li>
+          <li class="show"><i class="fas fa-heart"></i>Wishlist</li>
+          <li class="show"><i class="fas fa-shopping-cart"></i>Cart(3)</li>
+          <li class="hide"><i class="fas fa-shopping-cart"></i><em class="pd-show">3</em></li>
+          <li class="hide"><button class="hamburger"><i class="fas fa-bars" aria-hidden="true"></i></button></li>
         </ul>
-        <button class="hamburger"><i class="fas fa-bars" aria-hidden="true"></i></button>
       </div>
+      <ul class="mobile-menu hide">
+        <li><a href="productPage.html">Product</a></li>
+        <li>Wishlist</li>
+        <li>Blog</li>
+        <li>Contact</li>
+        <li>Mypage</li>
+      </ul>
     <div class="brand-list-bg mb-80">
         <ul class="brand-list container">
             <li>CHANEL</li>
@@ -31,6 +39,13 @@
         </ul>
     </div>
 
+        
+    <div class="modal">
+        <div class="modal-content">
+            <p>已加入購物車</p>
+        </div>
+    </div>
+
 <div class="container">
     <ul class="all-product-list">
         <li>
@@ -40,7 +55,7 @@
             <p class="price">NT$1,380</p>
             <span class="discount">NT$1,680</span>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         </li>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index6.jpg?raw=true" alt="">
@@ -49,21 +64,21 @@
             <p class="price">NT$1,380</p>
             <span class="discount">NT$1,680</span>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products3.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
             <p class="producer">Jo Malone</p>
             <p class="price">NT$1,380</p>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products4.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
             <p class="producer">Jo Malone</p>
             <p class="price">NT$1,380</p>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products5.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
@@ -71,7 +86,7 @@
             <p class="price">NT$1,380</p>
             <span class="discount">NT$1,680</span>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index4.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
@@ -79,21 +94,21 @@
             <p class="price">NT$1,380</p>
             <span class="discount">NT$1,680</span>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products7.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
             <p class="producer">Jo Malone</p>
             <p class="price">NT$1,380</p>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products8.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
             <p class="producer">Jo Malone</p>
             <p class="price">NT$1,380</p>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/index3.png?raw=true" alt="">
             <h3>Poppy & Barley</h3>
@@ -101,7 +116,7 @@
             <p class="price">NT$1,380</p>
             <span class="discount">NT$1,680</span>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products10.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
@@ -109,21 +124,21 @@
             <p class="price">NT$1,380</p>
             <span class="discount">NT$1,680</span>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products11.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
             <p class="producer">Jo Malone</p>
             <p class="price">NT$1,380</p>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
         <li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/perfume-week6/products12.jpg?raw=true" alt="">
             <h3>Poppy & Barley</h3>
             <p class="producer">Jo Malone</p>
             <p class="price">NT$1,380</p>
             <br>
-            <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+            <a href="#" class="icon like"><i class="fas fa-heart"></i></a>
             <a href="singleProduct.html" class="icon"><i class="fas fa-shopping-cart"></i></a>
     </ul>
     <ul class="pagination">
@@ -157,6 +172,6 @@
     </div>
     </div>
 
-
+    <script src="js/script.js"></script>
 </body>
 </html>

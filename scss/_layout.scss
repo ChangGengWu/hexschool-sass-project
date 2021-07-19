@@ -11,19 +11,55 @@
   align-items: center;
   .menu {
     font-size: $fs-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     li {
       padding: 16px;
       font-size: $fs-2;
       color: #8d8d8d;
+      position: relative;
+    }
+    em {
+      width: 16px;
+      height: 13px;
+      font-size: 12px;
+      border-radius: 50px;
+      padding: 1px;
+      position: absolute;
+      text-align: center;
+      top: 10px;
+      right: 10px;
+      border-radius: 50%;
+      background: #916019;
+      color: #fff;
     }
   }
   @include mobile {
-    .menu {
-      display: none;
+    li {
+      padding: 8px;
     }
-    .hamburger {
-      display: block;
+    .show {
+      display: none !important;
     }
+    .hide {
+      display: block !important;
+    }
+  }
+}
+
+.mobile-menu {
+  color: #ffffff;
+  width: 375px;
+  position: absolute;
+  background: #707070;
+  right: 0;
+  text-align: center;
+  font-size: $fs-2;
+  line-height: $lh-2;
+  li {
+    padding: 16px 0;
+    border: 1px solid #ffffff;
   }
 }
 
@@ -32,8 +68,8 @@
   height: 56px;
   background: transparent;
   border: none;
-  display: none;
 }
+
 .logo-1 {
   width: 128px;
   height: 38px;
@@ -160,6 +196,34 @@
     }
     .menu {
       display: none;
+    }
+  }
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #00000080;
+  justify-content: center;
+  align-items: center;
+  .modal-content {
+    width: 540px;
+    height: 62px;
+    margin: 25% auto;
+    color: #916000;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      width: 165px;
+      height: 62px;
     }
   }
 }
